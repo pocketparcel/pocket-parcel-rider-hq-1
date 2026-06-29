@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Segoe UI", Roboto, system-ui, sans-serif;
+  --color-brand-orange: #ff8a22;
+  --color-brand-blue: #144a99;
+  --color-brand-blue-soft: #1f5fb7;
+  --color-panel-bg: #f5f8fc;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply max-w-full overflow-x-hidden;
+  }
+
+  body {
+    @apply m-0 bg-panel-bg font-sans text-slate-700 antialiased;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+}
