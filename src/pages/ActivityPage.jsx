@@ -4,7 +4,7 @@ function ActivityPage() {
       <h2 className="text-lg font-semibold text-slate-900">Rider Activity</h2>
       <p className="mt-1 text-sm text-slate-600">
         The Activity Feed can be enhanced next by including dispatch events and
-        user login history.
+        user login history
       </p>
     </section>
   );
