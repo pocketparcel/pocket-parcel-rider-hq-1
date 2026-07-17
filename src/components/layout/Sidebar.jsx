@@ -1,4 +1,5 @@
 import {
+  FiCreditCard,
   FiGlobe,
   FiHelpCircle,
   FiHome,
@@ -72,6 +73,7 @@ function Sidebar({
       badge: riderCount > 0 ? String(riderCount) : null,
     },
     { key: 'orders', path: '/orders', name: 'Orders', icon: FiTruck },
+    { key: 'payouts', path: '/payouts', name: 'Payouts', icon: FiCreditCard },
     { key: 'support', path: '/support', name: 'Support', icon: FiMessageCircle },
     { key: 'help-faqs', path: '/help-faqs', name: 'Help FAQs', icon: FiHelpCircle },
     { key: 'dispatch-policies', path: '/dispatch-policies', name: 'Dispatch Policies', icon: FiShield },

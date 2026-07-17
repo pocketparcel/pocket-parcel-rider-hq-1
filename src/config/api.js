@@ -49,6 +49,12 @@ export const adminApi = {
   dispatchPolicies: `${API_BASE_URL}/admin/dispatch-policies`,
   platformOtpSmsSettings: `${API_BASE_URL}/admin/platform-settings/otp-sms`,
   platformOtpSmsTest: `${API_BASE_URL}/admin/platform-settings/otp-sms/test`,
+  payoutsWithdrawals: `${API_BASE_URL}/admin/payouts/withdrawals`,
+  payoutWithdrawal: (id) =>
+    `${API_BASE_URL}/admin/payouts/withdrawals/${encodeURIComponent(id)}`,
+  payoutsRemittances: `${API_BASE_URL}/admin/payouts/remittances`,
+  payoutRemit: (id) =>
+    `${API_BASE_URL}/admin/payouts/remittances/${encodeURIComponent(id)}/remit`,
 }
 
 export const riderAppApi = {

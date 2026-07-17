@@ -22,6 +22,7 @@ import HelpFaqsPage from './pages/HelpFaqsPage'
 import DispatchPoliciesPage from './pages/DispatchPoliciesPage'
 import PlatformSettingsPage from './pages/PlatformSettingsPage'
 import OnlineRidersMapPage from './pages/OnlineRidersMapPage'
+import PayoutsPage from './pages/PayoutsPage'
 import { useAdminNotifications } from './hooks/useAdminNotifications'
 import { useSupportNotifications } from './hooks/useSupportNotifications'
 import { notifySupportTicketAttended, requestNotificationPermission } from './utils/supportNotifications'
@@ -50,6 +51,7 @@ function App() {
     '/live-map': 'live-map',
     '/riders': 'riders',
     '/orders': 'orders',
+    '/payouts': 'payouts',
     '/support': 'support',
     '/help-faqs': 'help-faqs',
     '/dispatch-policies': 'dispatch-policies',
@@ -224,6 +226,10 @@ function App() {
         <Route
           path="/orders/:id"
           element={<OrderDetailsPage adminToken={adminToken} onUnauthorized={handleLogout} />}
+        />
+        <Route
+          path="/payouts"
+          element={<PayoutsPage adminToken={adminToken} onUnauthorized={handleLogout} />}
         />
         <Route
           path="/support"
